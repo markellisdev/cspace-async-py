@@ -9,6 +9,7 @@
 </table>
 
 ## Thoughts/Solution Process
+First thought was to use beautiful soup, but I think Scrapy might be the better choice after initial research. Scrapy should already be asynchronous from what I've read.
 <!-- Originally started out with vanilla JS using if-else statements....
 but then found [this solution using switch cases](https://stackoverflow.com/a/44633141/6615341). I don't yet have the knowledge or the tests to prove this is faster, but from the author's explanation, it makes sense to me why it would/could be as array sizes get larger.
 
