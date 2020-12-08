@@ -66,7 +66,7 @@ ROBOTSTXT_OBEY = True
 #    'imagescrapy.pipelines.ImagescrapyPipeline': 300,
 #}
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
-IMAGES_STORE = '/Users/markellis/Documents/Dev-JobSearch/2020/CodingTests/cspace/cspace-async-py/imageStore'
+IMAGES_STORE = '../app/static'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
