@@ -3,10 +3,10 @@ import random
 from scrapy.exporters import JsonLinesItemExporter
 from imagescrapy.items import KittenImage
 
-urls=['https://placekitten.com/200/300', 'https://placekitten.com/100/100']
+urls=[]
 # generate random pairs for images to place in urls above
 randomlist = []
-for i in range(0,5):
+for i in range(0,128):
     # n = random.randint(1,1000)
     s =  'https://placekitten.com/{}/{}'.format(random.randint(1,1000), random.randint(1,1000))    
     urls.append(s)
