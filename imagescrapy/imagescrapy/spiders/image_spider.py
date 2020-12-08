@@ -7,15 +7,16 @@ urls=['https://placekitten.com/200/300', 'https://placekitten.com/100/100']
 # generate random pairs for images to place in urls above
 randomlist = []
 for i in range(0,5):
-    n = random.randint(1,1000)
-    randomlist.append(n)
+    # n = random.randint(1,1000)
+    s =  'https://placekitten.com/{}/{}'.format(random.randint(1,1000), random.randint(1,1000))    
+    randomlist.append(s)
 print(randomlist)
 print(random.choice(randomlist))
 
 # create string for images
 for i in range(0,5):
-     s =  '{}/{}'.format(random.choice(randomlist), random.choice(randomlist))
-     print("s is: ", s)
+    s =  'https://placekitten.com/{}/{}'.format(random.choice(randomlist), random.choice(randomlist))
+    # print("s is: ", s)
 
 class QuotesSpider(scrapy.Spider):
     name = "image_spider"
