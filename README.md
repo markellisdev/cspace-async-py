@@ -26,8 +26,20 @@ but then found [this solution using switch cases](https://stackoverflow.com/a/44
 8. find middle num of first/last half - DONE - recursively with switch case until num is found
 9. compare, create new array, loop - DONE - no longer creating new array thanks to solution mentioned above; recursively eval original array in switch case lines 69-72 -->
 
-<!-- ## Site
-![](/images/read_me_images/Screen%20Shot%202017-03-10%20at%203.28.51%20PM.png "Home page")
+## Instructions
+To activate venv
+1. from cd cspace-async-py <main> ✗ source spidervenv/bin/activate
+
+To run spider
+1. cd imagescrapy
+2. scrapy crawl image_spider --logfile output.log
+
+To run flask
+1. cd ../
+2. export FLASK_APP=display.py  
+3. flask run
+
+<!-- ![](/images/read_me_images/Screen%20Shot%202017-03-10%20at%203.28.51%20PM.png "Home page")
 
 ### Landing Page
 Here a User is invited to login or register as a new User.

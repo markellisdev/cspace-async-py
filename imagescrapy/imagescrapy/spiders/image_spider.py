@@ -9,13 +9,13 @@ randomlist = []
 for i in range(0,5):
     # n = random.randint(1,1000)
     s =  'https://placekitten.com/{}/{}'.format(random.randint(1,1000), random.randint(1,1000))    
-    randomlist.append(s)
-print(randomlist)
-print(random.choice(randomlist))
+    urls.append(s)
+print(urls)
+# print(random.choice(randomlist))
 
 # create string for images
-for i in range(0,5):
-    s =  'https://placekitten.com/{}/{}'.format(random.choice(randomlist), random.choice(randomlist))
+# for i in range(0,5):
+#     s =  'https://placekitten.com/{}/{}'.format(random.choice(randomlist), random.choice(randomlist))
     # print("s is: ", s)
 
 class QuotesSpider(scrapy.Spider):
